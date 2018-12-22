@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-<script src="script.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
   crossorigin="anonymous">
 
+<script src="lib/data.js"></script>
+<script src="lib/common.js"></script>
+<script src="script.js"></script>
+<script src="lib/Service.js"></script>
+<script src="lib/vision.js"></script>
 <head>
   <title>SMART FRIDGE</title>
 </head>
@@ -21,7 +24,7 @@
       <div class="col-lg-8" id="leftContainer">
         <div id="imageDiv" class="mainScreen">
           <span id="captionSpan"></span><br>
-          <img id="sourceImage" src="https://drive.google.com/uc?id=1ILy6j2cPCDeLJa86exTwy6eg0-9Nhg6o" />         
+          <img id="sourceImage"/>         
         </div>
 
         <div id="recipeDiv" class="mainScreen" hidden>
@@ -61,9 +64,9 @@
       <div class="col-md-4">
         <table id="urunler" border="5">
           <tr>
-            <th>Ürünleriniz</th>
-            <th>Kaç gündür burada?</th>
-            <th>Celcius</th>
+            <th>Ürün Adı</th>
+            <th>Son Kullanma Tarihine Kalan Gün</th>
+            <th>Optimal Celcius</th>
             <th>Hacim</th>
           </tr>
 
