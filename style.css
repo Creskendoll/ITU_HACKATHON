@@ -1,13 +1,11 @@
 #urunler {
  
-  padding: 5px;
   background-color: rgb(255, 255, 255);
-  margin: 10px;
   font-size: 20px;
   display: block;
   overflow: auto;
-  width: 450px;
-  height: 450px
+  width: 100%;
+  max-height: 500px;
 }
 
 #siparis {
@@ -38,89 +36,110 @@
 
    
    cursor: pointer;
-    height: 100px;
-    width: 300px;
+    height: 50px;
+    width: 350px;
     border-radius: 8px;
-    font-family: "Helvetica";
+    font-family: "Monospace";
     font-size: 20pt;
     color: rgb(5, 4, 3);
     background-image: linear-gradient(#99ccff, #3399ff);
     background-color: lightskyblue;
-
-    padding: 10px;
+    text-align: center;
+    transition-duration: 0.8s !important;
 }
 #button:hover  {
     background-image: linear-gradient(#e6f7ff, #3399ff);
-
+    
 }
-#button2 {
+#buttonRecipe {
 
    cursor: pointer;
-    height: 100px;
-    width: 300px;
+    height: 50px;
+    width: 200px;
     
     font-size: 20pt;
     color: rgb(5, 4, 3);
     background-image: linear-gradient(#99ccff, #3399ff);
     background-color: lightskyblue;
     border-radius: 8px; 
-    padding: 10px;
-    
-
+    font-family: "Monospace";
+    text-align: center;
 
 
 }
-#button2:hover  {
+#buttonRecipe:hover  {
     background-image: linear-gradient(#e6f7ff, #3399ff);
 
 }
-#button3 {
+#buttonOrder {
 
     cursor: pointer;
-    height: 100px;
-    width: 300px;
+    height: 50px;
+    width: 200px;
     border-radius: 8px;
     font-size: 20pt;
     color: rgb(5, 4, 3);
     background-image: linear-gradient(#99ccff, #3399ff);
     background-color: lightskyblue;
     border-radius: 8px;
-    padding: 10px;
+    font-family: "Monospace";
+    text-align: center;
 
 }
-#button3:hover  {
+#buttonOrder:hover  {
     background-image: linear-gradient(#e6f7ff, #3399ff);
 
 }
+#buttonImage {
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    border-radius: 8px;
+    font-size: 20pt;
+    color: rgb(5, 4, 3);
+    background-image: linear-gradient(#99ccff, #3399ff);
+    background-color: lightskyblue;
+    border-radius: 8px;
+    font-family: "Monospace";
+    text-align: center;
+
+}
+#buttonImage:hover  {
+    background-image: linear-gradient(#e6f7ff, #3399ff);
+}
 #userInput {
   
-    height: 20px;
+    height: 40px;
     width: 295px
 }
 
 #sourceImage {
 
     width:600px; 
-    height: 500px
+    height: 500px;
+    cursor: pointer;
 
 
 }
-
 table {
 
- width: 150px;
+ width:650px !important;
  vertical-align: top;
  border-collapse: collapse;
+  
+ border-color: #28639e;
+ margin-top: 20px;
+
 }
-th {
-    width: 200px;
-    vertical-align: center;
-    padding: 5px;
-    border-bottom: 1px solid #ddd;
-    height: 50px;
-    
-}
-tr {
-    width:250px;
+th, tr {
+    text-align: center !important;
+    border-color: black;
    
 }
+
+tr:nth-child(even) {background-color:#e6f7ff ;}
+
+
+    
+
+
