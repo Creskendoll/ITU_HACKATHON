@@ -1,10 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <head>
     <title>SMART FRIDGE</title>
   </head>
 
   <body>
-    <p>Akıllı buzdolabı projesi.</p>
+    <h1>Akıllı buzdolabı projesi.</h1>
+    
+    <div class="imageDiv">
+        <span id="captionSpan"></span><br>
+        <img id="sourceImage" src="https://drive.google.com/uc?id=1ILy6j2cPCDeLJa86exTwy6eg0-9Nhg6o"/>
+    </div>
+
+    <div>  
+      <table id="urunler" border="5">
+        <th id="listem">Ürünleriniz</th>
+        <th id="listem2">Ne kadar zamandır burada?</th>
+      </table>
+      <table>
+        <tr>  
+          <input 
+          type="text"
+          id="userInput"
+          name="name"
+          required
+          minlength="1"
+          maxlength="50"
+          size="50"
+        /></tr>
+      </table>
+    </div> 
+    
+  <button id="button3">Tarifler</button>
+  <button id="button2">Sipariş ver.</button>
+  <button id="button">Listeye ürün ekle.</button>
+    
+
   </body>
 </html>
