@@ -1,10 +1,9 @@
 #urunler {
-  position: relative;
-  float: right;
+ 
   padding: 5px;
   background-color: rgb(255, 255, 255);
   margin: 10px;
-  font-size: 15px;
+  font-size: 20px;
   display: block;
   overflow: auto;
   width: 450px;
@@ -13,51 +12,54 @@
 
 #button {
 
-    position: fixed ;
-    left: 1100px;
-    top: 630px;
+   
+   
     height: 100px;
-    width: 300px
+    width: 300px;
+    border-radius: 4px;
+    font-family: "Helvetica";
+    font-size: 20pt;
+    color: rgb(5, 4, 3);
+    background-image: -moz-linear-gradient();
+    background-color: lightskyblue
 
 }
 
 #button2 {
 
-    position: fixed;
-    left: 550px;
-    top: 600px;
+   
     height: 100px;
-    width: 300px
-
+    width: 300px;
+    border-radius: 4px;
+    font-size: 20pt;
+    color: rgb(5, 4, 3);
+    background-image: -moz-linear-gradient();
+    background-color: lightskyblue
 
 
 }
 
 #button3 {
 
-    position: fixed;
-    left: 250px;
-    top: 600px;
+  
     height: 100px;
-    width: 300px
-
-
+    width: 300px;
+    border-radius: 5px;
+    font-size: 20pt;
+    color: rgb(5, 4, 3);
+    background-image: -moz-linear-gradient();
+    background-color: lightskyblue
 
 }
 
 #userInput {
-    position: absolute;
-    top: 600px;
-    left: 1100px;
+  
     height: 20px;
     width: 295px
 }
 
 #sourceImage {
 
-    position: absolute;
-    left: 250px;
-    top: 75px;
     width:600px; 
     height: 500px
 
