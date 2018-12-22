@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"
-  ></script>
-  <script src="script.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <head>
-    <title>SMART FRIDGE</title>
-  </head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
 
-  <body>
-    <h1>Akıllı buzdolabı projesi.</h1>
-    
-    <div class="imageDiv">
-        <span id="captionSpan"></span><br>
-        <img id="sourceImage" src="https://drive.google.com/uc?id=1ILy6j2cPCDeLJa86exTwy6eg0-9Nhg6o"/>
+<head>
+  <title>SMART FRIDGE</title>
+</head>
+
+<body>
+  <h1 align=center>Akıllı Buzdolabı Projesi</h1>
+
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div class="col-lg-8">
+        <div id="imageDiv">
+          <span id="captionSpan"></span><br>
+          <img id="sourceImage" src="https://drive.google.com/uc?id=1ILy6j2cPCDeLJa86exTwy6eg0-9Nhg6o" />
+          <div>
+            <button id="button3">Tarifler</button>
+            <button id="button2">Sipariş ver.</button>
+
+          </div>
+        </div>
+        <div id="recipeDiv" hidden>
+          <table>
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+        <table id="urunler" border="5">
+          <tr>
+            <th id="listem">Ürünleriniz</th>
+            <th id="listem2">Kaç gündür burada?</th>
+            <th>Celcius</th>
+            <th>Hacim</th>
+          </tr>
+
+        </table>
+        <table>
+          <tr>
+            <input type="text" id="userInput" name="name" required minlength="1" maxlength="50" size="50" /></tr>
+        </table>
+        <button id="button">Listeye ürün ekle.</button>
+      </div>
+
+
     </div>
+  </div>
+  </div>
+</body>
 
-    <div>  
-      <table id="urunler" border="5">
-        <th id="listem">Ürünleriniz</th>
-        <th id="listem2">Ne kadar zamandır burada?</th>
-      </table>
-      <table>
-        <tr>  
-          <input 
-          type="text"
-          id="userInput"
-          name="name"
-          required
-          minlength="1"
-          maxlength="50"
-          size="50"
-        /></tr>
-      </table>
-    </div> 
-    
-  <button id="button3">Tarifler</button>
-  <button id="button2">Sipariş ver.</button>
-  <button id="button">Listeye ürün ekle.</button>
-    
-
-  </body>
 </html>
