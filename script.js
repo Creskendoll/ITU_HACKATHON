@@ -1,7 +1,13 @@
 $(document).ready(function() {
 
     $('.breakrow').click(function(){
-      $(this).nextUntil('th.breakrow').slideToggle(200);
+      $(this).nextUntil('tr.breakrow').slideToggle(200);
+    });
+    $('.breakrow2').click(function(){
+      $(this).nextUntil('tr.breakrow2').slideToggle(200);
+    });
+    $('.breakrow3').click(function(){
+      $(this).nextUntil('tr.breakrow3').slideToggle(200);
     });
 
   let name;
