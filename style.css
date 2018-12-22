@@ -45,7 +45,7 @@
     background-image: linear-gradient(#99ccff, #3399ff);
     background-color: lightskyblue;
     text-align: center;
-    transition-duration: 0.8s !important;
+    
 }
 #button:hover  {
     background-image: linear-gradient(#e6f7ff, #3399ff);
