@@ -10,6 +10,30 @@
   height: 450px
 }
 
+#siparis {
+ 
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: 20px;
+    display: block;
+    overflow: auto;
+    width: 450px;
+    height: 450px
+  }
+
+  #tarif {
+ 
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: 20px;
+    display: block;
+    overflow: auto;
+    width: 450px;
+    height: 450px
+  }
+
 #button {
 
    

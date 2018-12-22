@@ -60,6 +60,19 @@ $(document).ready(function() {
   $("#userInput").change(function(event) {
     name = event.target.value;
   });
+
+  $("#buttonRecipe").click(function(){
+    $(".mainScreen").attr('hidden',true);
+    $("#recipeDiv").attr('hidden',false);
+
+  })
+
+  $("#buttonOrder").click(function(){
+    $(".mainScreen").attr('hidden', true);
+    $("#orderDiv").attr('hidden', false);
+    
+
+  })
 });
 
  
