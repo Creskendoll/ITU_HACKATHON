@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+<link rel="icon" href="https://i.pinimg.com/originals/6c/5f/9f/6c5f9f462a23273861d1de01fee65696.png">
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="style.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
   crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="idle.css" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+  crossorigin="anonymous">
 
 
 <script src="lib/data.js"></script>
@@ -25,42 +28,78 @@
 
   <div id="idleScreen"></div>
 
-  <div id="mainScreen"class="container-fluid" hidden>
-   
+  <div id="mainScreen" class="container-fluid" hidden>
+
     <div class="row">
-      
+
       <div class="col-lg-6 col-md-6" id="leftContainer">
         <div id="imageDiv" class="mainScreen">
           <span id="captionSpan"></span><br>
-          <img id="sourceImage"/>         
+          <img id="sourceImage" />
         </div>
 
-        <div id="recipeDiv" class="mainScreen"  hidden>
+        <div id="recipeDiv" class="mainScreen" hidden>
           <table id="tarif" border="5">
             <td>Önerilen Tarifler</td>
-            <tr class="breakrow3"><th>
-            Tereyağlı Limonlu Kek
-              <tr><td>3 Adet Yumurta</td></tr>
-              <tr><td>1 Su Bardağı Toz Şeker</td></tr>
-              <tr><td>1 Su Bardağı Süt</td></tr>
-              <tr><td>Yarım Su Bardağı Sıvı Tereyağı</td></tr>
-              <tr><td>2 Adet Limon Kabuğu</td></tr>
-              <tr><td>1 Paket Kabartma Tozu</td></tr>
-              <tr><td>1 Paket Vanilya</td></tr>
-              <tr><td>2 Su Bardağı Un</td></tr>
-            </th></tr>
-           <tr class="breakrow3"><th>Tava Böreği
-              <tr><td>3 Adet Yufka</td>
-                <tr><td>1 Adet Yumurta </td></tr>
-                <tr><td>1 Çay Bardağı Sıvı Yağ</td></tr>
-                <tr><td>1 Çay Bardağı Süt</td></tr>  
-              </th></tr>
+            <tr class="breakrow">
+              <th>
+                  Tereyağlı Limonlu Kek
+                <tr>
+                  <td>3 Adet Yumurta</td>
+                </tr>
+                <tr>
+                  <td>1 Su Bardağı Toz Şeker</td>
+                </tr>
+                <tr>
+                  <td>1 Su Bardağı Süt</td>
+                </tr>
+                <tr>
+                  <td>Yarım Su Bardağı Sıvı Tereyağı</td>
+                </tr>
+                <tr>
+                  <td>2 Adet Limon Kabuğu</td>
+                </tr>
+                <tr>
+                  <td>1 Paket Kabartma Tozu</td>
+                </tr>
+                <tr>
+                  <td>1 Paket Vanilya</td>
+                </tr>
+                <tr>
+                  <td>2 Su Bardağı Un</td>
+                </tr>
+              </th>
             </tr>
-            <tr class="breakrow3"><th>Yeşil-Kırmızı Salata
-              <tr><td>Cucumber</td></tr>
-              <tr><td>Tomato</td></tr>
-              <tr><td>Vegetable</td></tr>
-            </th></tr>
+            <tr class="breakrow">
+              <th>
+                Tava Böreği
+              <tr>
+                <td>3 Adet Yufka</td>
+              <tr>
+                <td>1 Adet Yumurta </td>
+              </tr>
+              <tr>
+                <td>1 Çay Bardağı Sıvı Yağ</td>
+              </tr>
+              <tr>
+                <td>1 Çay Bardağı Süt</td>
+              </tr>
+              </th>
+              </tr>
+            </tr>
+            <tr class="breakrow">
+              <th>Yeşil-Kırmızı Salata
+            <tr>
+              <td>Cucumber</td>
+            </tr>
+            <tr>
+              <td>Tomato</td>
+            </tr>
+            <tr>
+              <td>Vegetable</td>
+            </tr>
+            </th>
+            </tr>
           </table>
         </div>
 
@@ -68,42 +107,67 @@
           <table id="siparis" border="5">
             <tr>
               <th>
-
-                <input type="text" id="userInput3"  />
-                <button  id="buttonAra">Ara</button>
+                <input type="text" id="userInput3" />
+                <button id="buttonAra">Ara</button>
               </th>
             </tr>
-            <tr class="breakrow3"><th>
-              Son Siparişiniz
-              <tr>
-                <tr><td>6 tane limon</td></tr>
-                <tr><td>3 paket katı tereyağı</td></tr>
-                <tr><td>1 paket vanilya</td></tr>
-                <tr><td>4 adet yufka</td></tr>
-                <tr><td>Ödediğiniz Tutar: 23 lira 12 kuruş</td></tr>
+            <tr class="breakrow">
+              <th>
+                Son Siparişiniz
+            <tr>
+            <tr>
+              <td>6 tane limon</td>
+            </tr>
+            <tr>
+              <td>3 paket katı tereyağı</td>
+            </tr>
+            <tr>
+              <td>1 paket vanilya</td>
+            </tr>
+            <tr>
+              <td>4 adet yufka</td>
+            </tr>
+            <tr>
+              <td>Ödediğiniz Tutar: 23 lira 12 kuruş</td>
+            </tr>
 
-              </tr>
-              
-            </th></tr>
-            <tr class="breakrow3"><th>
-              Buzdolabınızda Neler Eksik?
-              <tr><td>Yarım kilo siyah zeytin</td></tr>
-              <tr><td>1 adet marul</td></tr>
-              <tr><td>2 litre kola</td></tr>
-              <tr><td>5 demet dereotu</td></tr>
-              <tr><td>Bütün bunlar Y marketinde 18 lira 25 kuruş</td></tr>
-              <tr><td>Bütün bunlar X marketinde 17 lira 10 kuruş</td></tr>
-            </th></tr>
-           
+            </tr>
+
+            </th>
+            </tr>
+            <tr class="breakrow">
+              <th>
+                Buzdolabınızda Neler Eksik?
+            <tr>
+              <td>Yarım kilo siyah zeytin</td>
+            </tr>
+            <tr>
+              <td>1 adet marul</td>
+            </tr>
+            <tr>
+              <td>2 litre kola</td>
+            </tr>
+            <tr>
+              <td>5 demet dereotu</td>
+            </tr>
+            <tr>
+              <td>Bütün bunlar Y marketinde 18 lira 25 kuruş</td>
+            </tr>
+            <tr>
+              <td>Bütün bunlar X marketinde 17 lira 10 kuruş</td>
+            </tr>
+            </th>
+            </tr>
+
           </table>
         </div>
         <div>
-            <button id="buttonImage">Görüntü</button>
+          <button id="buttonImage">Görüntü</button>
           <button id="buttonRecipe">Tarifler</button>
-            <button id="buttonOrder">Sipariş ver.</button>
-            
+          <button id="buttonOrder">Sipariş ver.</button>
 
-          </div>
+
+        </div>
       </div>
 
       <div class="col-md-6 col-lg-6">
@@ -116,7 +180,7 @@
           </tr>
 
         </table>
-            <input type="text" id="userInput" name="name" required minlength="1" maxlength="50" size="50" /></tr>
+        <input type="text" id="userInput" name="name" required minlength="1" maxlength="50" size="50" /></tr>
         <button id="button">Listeye ürün ekle.</button>
       </div>
 

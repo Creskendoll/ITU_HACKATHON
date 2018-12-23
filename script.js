@@ -1,18 +1,11 @@
 $(document).ready(function() {
-
+  $('.breakrow').nextUntil('tr.breakrow').slideToggle(100);
     $('.breakrow').click(function(){
       $(this).nextUntil('tr.breakrow').slideToggle(100);
     });
-    $('.breakrow2').click(function(){
-      $(this).nextUntil('tr.breakrow2').slideToggle(100);
-    });
-    $('.breakrow3').click(function(){
-      $(this).nextUntil('tr.breakrow3').slideToggle(100);
-    });
-
-  let name;
 
   $("#button").click(function() {
+      let name = $('#userInput').val();
       let currentDate = new Date();
       currentDate.setDate(currentDate.getDate() + 15);
       let props = {
@@ -22,10 +15,6 @@ $(document).ready(function() {
           expiration : currentDate
       }
       populateList(props);
-    // var markup = "<tr><td><b>Ürününüz: "+val+"    ";
-    // $("#listem").append(markup);
-    // var markup2 = "</td></tr>"+"<tr><td>"+new Date()+"</td></tr>"
-    // $("#listem2").append(markup2); 
   });
 
   $("#userInput").change(function(event) {
@@ -51,6 +40,21 @@ $(document).ready(function() {
 
   })
 
+  $('#userInput').keypress(function (e) {
+    if(e.which == 13) {
+      let name = $('#userInput').val();
+      let currentDate = new Date();
+      currentDate.setDate(currentDate.getDate() + 15);
+      let props = {
+        name : name,
+        temp : 7,
+        volume : 10,
+        expiration : currentDate
+      }
+      populateList(props);
+      $(this).val('');    
+    }
+    });
 
 });
 
