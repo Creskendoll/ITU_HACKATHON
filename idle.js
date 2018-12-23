@@ -7,5 +7,10 @@ $(document).ready(function() {
         $('#dateText').html(new Date().getDate() + "." 
         + new Date().getMonth() + "." +
         new Date().getFullYear());
-      }, 1000)
+      }, 1000);
+
+      $(document.documentElement).keypress(function() {
+          $('#idleScreen').attr('hidden', true);
+          $('#mainScreen').attr('hidden', false);
+      });
 });

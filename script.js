@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
     $('.breakrow').click(function(){
-      $(this).nextUntil('tr.breakrow').slideToggle(200);
+      $(this).nextUntil('tr.breakrow').slideToggle(100);
     });
     $('.breakrow2').click(function(){
-      $(this).nextUntil('tr.breakrow2').slideToggle(200);
+      $(this).nextUntil('tr.breakrow2').slideToggle(100);
     });
     $('.breakrow3').click(function(){
-      $(this).nextUntil('tr.breakrow3').slideToggle(200);
+      $(this).nextUntil('tr.breakrow3').slideToggle(100);
     });
 
   let name;
