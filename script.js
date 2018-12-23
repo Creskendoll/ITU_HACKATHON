@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $( "#stt" ).datepicker( {
+    dateFormat: "dd.mm.yy"
+  });
+
   $('.breakrow').nextUntil('tr.breakrow').slideToggle(100);
     $('.breakrow').click(function(){
       $(this).nextUntil('tr.breakrow').slideToggle(100);
@@ -6,15 +10,14 @@ $(document).ready(function() {
 
   $("#button").click(function() {
       let name = $('#userInput').val();
-      let currentDate = new Date();
-      currentDate.setDate(currentDate.getDate() + 15);
+      let stt = $.datepicker.parseDate( "dd.mm.yy", $("#stt").val() );
       let props = {
           name : name,
           temp : 7,
-          volume : 10,
-          expiration : currentDate
+          expiration : stt
       }
       populateList(props);
+      $("#userInput").val('');    
   });
 
   $("#userInput").change(function(event) {
@@ -43,13 +46,11 @@ $(document).ready(function() {
   $('#userInput').keypress(function (e) {
     if(e.which == 13) {
       let name = $('#userInput').val();
-      let currentDate = new Date();
-      currentDate.setDate(currentDate.getDate() + 15);
+      let stt = $.datepicker.parseDate( "dd.mm.yy", $("#stt").val() );
       let props = {
         name : name,
         temp : 7,
-        volume : 10,
-        expiration : currentDate
+        expiration : stt
       }
       populateList(props);
       $(this).val('');    

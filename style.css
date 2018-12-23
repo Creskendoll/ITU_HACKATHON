@@ -118,6 +118,11 @@ body {
     height: 40px;
     width: 295px
 }
+#stt {
+    
+    height: 40px;
+    width: 295px
+}
 
 #sourceImage {
 
@@ -131,7 +136,7 @@ body {
 
 
 }
-table {
+.tab-table {
 
  width:650px !important;
  vertical-align: top;
@@ -165,10 +170,10 @@ tr:nth-child(even) {background-color:#e6f7ff ;}
 #buttonAra:hover{
     background-image: linear-gradient(#e6f7ff, #3399ff);
 }
-.breakrow3:hover {
+.breakrow:hover {
     background-image: linear-gradient(#e6f7ff, #3399ff);
 }
-.breakrow3 {
+.breakrow {
     background-color: rgb(11, 10, 70) !important;
     color: #e6f7ff
 }
