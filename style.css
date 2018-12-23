@@ -3,13 +3,15 @@ body {
 }
 
 #urunler {
- 
+  border-color: #28639e;
   background-color: rgb(255, 255, 255);
   font-size: 20px;
   display: block;
   overflow: auto;
-  width: 100%;
+  width:625px;
   max-height: 500px;
+  margin-top: 20px;
+  padding:5px;
 }
 
 #siparis {
@@ -29,7 +31,7 @@ body {
     padding: 5px;
     background-color: rgb(255, 255, 255);
     margin: 10px;
-    font-size: 20px;
+    font-size: 25px;
     overflow: auto;
     width: 600px !important;
     height: 450px;
@@ -41,7 +43,7 @@ body {
    
    cursor: pointer;
     height: 50px;
-    width: 350px;
+    width: 300px;
     border-radius: 8px;
     font-family: "Monospace";
     font-size: 20pt;
@@ -219,4 +221,15 @@ tr:nth-child(even) {background-color:#e6f7ff ;}
 }
 #Fridge{
     cursor: pointer !important;
+}
+#taneInput {
+    text-align: center;
+    
+}
+#a {
+    cursor: pointer !important;
+}
+#a:hover {
+    opacity: 0.7;
+    transition: opacity .25s ease-in-out !important;
 }
