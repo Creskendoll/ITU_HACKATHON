@@ -13,4 +13,5 @@ $(document).ready(function() {
           $('#idleScreen').attr('hidden', true);
           $('#mainScreen').attr('hidden', false);
       });
+
 });

@@ -18,9 +18,20 @@
                 <h2 class="tempNum" id="tempNum2">7°C</h2>
             </div>
             <div class="col" style="margin-top:20px; margin-left: 180px; display: grid;">
+                <div class="popup" onclick="bell()">
                     <i class="fas fa-bell" style="font-size:100px; text-shadow:2px 2px 4px #000000; " id="bell"></i>
+                    <span class="popuptext" id="myPopup">0 Yeni Bildirim</span>
+                </div>
                 <i class="fas fa-question-circle" style="font-size:100px; text-shadow:2px 2px 4px #000000; margin-top:350px;" id="soru"></i>
             </div>
-         </div>
+        </div>
     </div>
 </div>
+
+<script>
+    
+    var bell = function() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+</script>
