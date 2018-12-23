@@ -1,0 +1,28 @@
+.leftDiv {
+    text-align: center;
+    border-right: black solid 2px;
+}
+#idleScreen {
+    border: black solid 3px;
+}
+#timeText, #dateText {
+    font-family: fantasy;
+}
+#tempDiv {
+    display: inline-flex;
+}
+
+#tempNum0 {
+    margin-top: 80px ;
+}
+#tempNum1 {
+    margin-top: 200px ;
+}
+#tempNum2 {
+    margin-top: 150px ;
+}
+
+.tempNum {
+    margin-left: 50px;
+    font-weight: 700;
+}
