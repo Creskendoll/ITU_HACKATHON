@@ -1,3 +1,7 @@
+body {
+    background: #f2f2f2 !important;
+}
+
 #urunler {
  
   background-color: rgb(255, 255, 255);
@@ -16,7 +20,8 @@
     font-size: 20px;
     overflow: auto;
     height: 500px;
-    
+    width: 600px !important;
+    margin-left: 50px;
   }
 
   #tarif {
@@ -26,8 +31,9 @@
     margin: 10px;
     font-size: 20px;
     overflow: auto;
-    width: 450px;
-    height: 450px
+    width: 600px !important;
+    height: 450px;
+    margin-left: 50px;
   }
 
 #button {
@@ -62,7 +68,7 @@
     border-radius: 8px; 
     font-family: "Monospace";
     text-align: center;
-
+    
 
 }
 #buttonRecipe:hover  {
@@ -82,6 +88,7 @@
     border-radius: 8px;
     font-family: "Monospace";
     text-align: center;
+    
 
 }
 #buttonOrder:hover  {
@@ -100,6 +107,7 @@
     border-radius: 8px;
     font-family: "Monospace";
     text-align: center;
+    margin-left: 50px;
 
 }
 #buttonImage:hover  {
@@ -116,6 +124,10 @@
     width:600px; 
     height: 500px;
     cursor: pointer;
+    margin-left: 50px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #28639e;
 
 
 }
@@ -158,4 +170,47 @@ tr:nth-child(even) {background-color:#e6f7ff ;}
 }
 .breakrow3 {
     background-color: white !important;
+}
+#tempNum0 {
+    margin-top: 0px !important;
+    font-size: 40pt; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+#tempNum1 {
+    margin-top:170px !important;
+    font-size: 40pt; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+#tempNum2 {
+    margin-top: 190px !important;
+    font-size: 40pt; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+#bell {
+
+    cursor: pointer !important;
+}
+#soru {
+    cursor: pointer !important;
+}
+
+
+#bell:hover {
+    opacity: 0.5;
+    transition: opacity .25s ease-in-out;
+}
+
+#soru:hover {
+    opacity: 0.5;
+    transition: opacity .25s ease-in-out;
+}
+#Fridge:hover {
+    opacity: 0.7;
+    transition: opacity .25s ease-in-out !important;
+}
+#Fridge{
+    cursor: pointer !important;
 }
