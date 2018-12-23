@@ -17,7 +17,7 @@ $(document).ready(function() {
       currentDate.setDate(currentDate.getDate() + 15);
       let props = {
           name : name,
-          temp : 30,
+          temp : 7,
           volume : 10,
           expiration : currentDate
       }
@@ -44,6 +44,14 @@ $(document).ready(function() {
     
 
   })
+
+  $("#buttonImage").click(function(){
+    $(".mainScreen").attr('hidden',true);
+    $("#imageDiv").attr('hidden',false);
+
+  })
+
+
 });
 
  
