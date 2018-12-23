@@ -169,7 +169,8 @@ tr:nth-child(even) {background-color:#e6f7ff ;}
     background-image: linear-gradient(#e6f7ff, #3399ff);
 }
 .breakrow3 {
-    background-color: white !important;
+    background-color: rgb(11, 10, 70) !important;
+    color: #e6f7ff
 }
 #tempNum0 {
     margin-top: 0px !important;
